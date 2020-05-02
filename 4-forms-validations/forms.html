@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise forms</title>
+</head>
+<body>
+    <form>
+        <label for="firstname">
+            First name: <input type="text" id="firtsname" name="user_firt_name" required>
+            <abbr title="required" aria-label="required">*</abbr>
+        </label>
+        <label for="lastname">
+            Last name: <input type="text" id="lastname" name="user_last_name" required>
+            <abbr title="required" aria-label="required">*</abbr>
+        </label>
+        <label for="email">
+            Email: <input type="email" id="email" name="user_email" required>
+            <abbr title="required" aria-label="required">*</abbr>
+        </label>
+        <label for="Dateofbirth">
+            Date of birth: <input type="date" id="Date of birth" name="user_date_birth" required>
+            <abbr title="required" aria-label="required">*</abbr>
+        </label>
+        <fieldset>
+            <legend>Choose your gender:</legend>
+            <select id="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Choose your status:</legend>
+            <input id="1" type="radio" name="bootcamp" value="1">
+            <label for="1">1</label>
+            <input id="2" type="radio" name="bootcamp" value="2">
+            <label for="2">2</label>
+            <input id="3" type="radio" name="bootcamp" value="3">
+            <label for="3">3</label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose your hobbies:</legend>
+            <input id="sing" type="checkbox" name="hobbies1" value="sing">
+            <label for="sing">Sing</label>
+            <input id="read" type="checkbox" name="hobbies2" value="read">
+            <label for="read">Read</label>
+            <input id="play" type="checkbox" name="hobbies3" value="play">
+            <label for="play">Play</label>
+        </fieldset>
+        <label for="myfile">Select image:</label>
+        <input type="file" id="myfile" name="myfile" accept="image/png, image/jpeg" required>
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
